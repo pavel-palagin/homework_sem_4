@@ -16,7 +16,7 @@ public class homework_3_chess {
     public static boolean checkQueen(int row, int col) {
 
         for (int i = 0; i < row; i++) {
-            if (arrayQueens[i] == col || arrayQueens[i] == (row + col - i) || arrayQueens[i] == (i + col - row)) {
+            if (arrayQueens[i] == col || arrayQueens[i] == col + (row - i) || arrayQueens[i] == col+ (i - row)) {
                 return false;
             }
         }
