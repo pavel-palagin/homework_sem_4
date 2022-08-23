@@ -38,8 +38,6 @@ public class homework_5 {
 
         for (int pos = 0; pos < arrayBrackets.length; pos++) {
             String currentSymbol = arrayBrackets[pos];
-
-
             if (openBrackets.containsKey(currentSymbol)) {
                 stackBracket.push(currentSymbol);
             }
@@ -47,8 +45,8 @@ public class homework_5 {
                 if (stackBracket.isEmpty()) {
                     return false;
                 }
-
-                if () {
+                String s = stackBracket.peek();
+                if (currentSymbol == s) {
                     stackBracket.pop();
                 } else {
                     return false;
