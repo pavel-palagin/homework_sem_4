@@ -11,13 +11,14 @@
 
 package seminar_java.homework;
 
+import java.util.Arrays;
 import java.util.Map;
 import java.util.Stack;
 
 public class homework_5 {
     public static void main(String[] args) {
 
-        String someOrderBrackets = "([{}])"; //"([]})"
+        String someOrderBrackets = "([]"; //"([]})"
 
         System.out.println(checkBracket(someOrderBrackets));
     }
@@ -38,6 +39,7 @@ public class homework_5 {
 
         for (int pos = 0; pos < arrayBrackets.length; pos++) {
             String currentSymbol = arrayBrackets[pos];
+
             if (openBrackets.containsKey(currentSymbol)) {
                 stackBracket.push(currentSymbol);
             }
@@ -46,19 +48,81 @@ public class homework_5 {
                     return false;
                 }
                 String s = stackBracket.peek();
-                if (currentSymbol == s) {
+
+                if (openBrackets.containsKey(currentSymbol) == Boolean.parseBoolean(s)) {
                     stackBracket.pop();
                 } else {
                     return false;
                 }
             }
-
-            if (!stackBracket.isEmpty()) {
-                return false;
-            }
         }
+
+        if (!stackBracket.isEmpty()) {
+            return false;
+        }
+
         return true;
     }
+
+
+
+//    public static boolean checkBracket(String someOrderBrackets) {
+//
+//        Stack<Character> stackBracket = new Stack<>();
+//
+//        Map<String, Integer> openBrackets = Map.of("(", 0,
+//                                                    "[", 1,
+//                                                    "{", 2);
+//
+//        Map<String, Integer> closeBrackets = Map.of(")", 0,
+//                                                    "]", 1,
+//                                                    "}", 2);
+//
+//        for (int i = 0; i < someOrderBrackets.length(); i++) {
+//
+//            char brt = someOrderBrackets.charAt(i);
+//
+//            if (openBrackets.containsKey(brt)) {
+//                stackBracket.push(brt);
+//            }
+//            if (closeBrackets.containsKey(brt)) {
+//                if (stackBracket.isEmpty()) {
+//                    return false;
+//                }
+//                char s = stackBracket.peek();
+//
+//                if (brt == s) {
+//                    stackBracket.pop();
+//                } else {
+//                    return false;
+//                }
+//            }
+//        }
+//
+//        if (!stackBracket.isEmpty()) {
+//            return false;
+//        }
+//
+//        return true;
+//    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
