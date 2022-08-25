@@ -18,38 +18,37 @@ import java.util.Stack;
 public class homework_5 {
     public static void main(String[] args) {
 
-        String someOrderBrackets = "([]"; //"([]})"
+        String someOrderBrackets = "([]}{)"; //"([]})"
 
         System.out.println(checkBracket(someOrderBrackets));
     }
 
     public static boolean checkBracket(String someOrderBrackets) {
 
-        String[] arrayBrackets = someOrderBrackets.split("");
-
-        Stack<String> stackBracket = new Stack<>();
+        Stack<Character> stackBracket = new Stack<>();
 
         Map<String, Integer> openBrackets = Map.of("(", 0,
-                "[", 1,
-                "{", 2);
+                                                    "[", 1,
+                                                    "{", 2);
 
         Map<String, Integer> closeBrackets = Map.of(")", 0,
-                "]", 1,
-                "}", 2);
+                                                    "]", 1,
+                                                    "}", 2);
 
-        for (int pos = 0; pos < arrayBrackets.length; pos++) {
-            String currentSymbol = arrayBrackets[pos];
+        for (int i = 0; i < someOrderBrackets.length(); i++) {
 
-            if (openBrackets.containsKey(currentSymbol)) {
-                stackBracket.push(currentSymbol);
+            char brt = someOrderBrackets.charAt(i);
+
+            if (openBrackets.containsKey(String.valueOf(brt))) {
+                stackBracket.push(brt);
             }
-            if (closeBrackets.containsKey(currentSymbol)) {
+            if (closeBrackets.containsKey(String.valueOf(brt))) {
                 if (stackBracket.isEmpty()) {
                     return false;
                 }
-                String s = stackBracket.peek();
+                char s = stackBracket.peek();
 
-                if (openBrackets.containsKey(currentSymbol) == Boolean.parseBoolean(s)) {
+                if ((brt == ')' && s == '(') || (brt == '}' && s == '{') || (brt == ']' && s == '[')) {
                     stackBracket.pop();
                 } else {
                     return false;
@@ -63,65 +62,6 @@ public class homework_5 {
 
         return true;
     }
-
-
-
-//    public static boolean checkBracket(String someOrderBrackets) {
-//
-//        Stack<Character> stackBracket = new Stack<>();
-//
-//        Map<String, Integer> openBrackets = Map.of("(", 0,
-//                                                    "[", 1,
-//                                                    "{", 2);
-//
-//        Map<String, Integer> closeBrackets = Map.of(")", 0,
-//                                                    "]", 1,
-//                                                    "}", 2);
-//
-//        for (int i = 0; i < someOrderBrackets.length(); i++) {
-//
-//            char brt = someOrderBrackets.charAt(i);
-//
-//            if (openBrackets.containsKey(brt)) {
-//                stackBracket.push(brt);
-//            }
-//            if (closeBrackets.containsKey(brt)) {
-//                if (stackBracket.isEmpty()) {
-//                    return false;
-//                }
-//                char s = stackBracket.peek();
-//
-//                if (brt == s) {
-//                    stackBracket.pop();
-//                } else {
-//                    return false;
-//                }
-//            }
-//        }
-//
-//        if (!stackBracket.isEmpty()) {
-//            return false;
-//        }
-//
-//        return true;
-//    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
