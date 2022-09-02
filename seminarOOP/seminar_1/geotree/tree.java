@@ -34,10 +34,10 @@ public class tree {
 //        Relation relation9 = new Relation(human5, human1, RelationType.HUSBAND);
 
         Research getAllRelation = new Research();
-        getAllRelation.allRelation.addAll(List.of(relation1,relation2, relation3, relation4, relation5, relation6, relation7));
+        getAllRelation.getRelation.addAll(List.of(relation1,relation2, relation3, relation4, relation5, relation6, relation7));
 
 
-       System.out.println(getAllRelation.findRelation("Mary", RelationType.DAUGHTER));
+       System.out.println(getAllRelation.findAllRelation("Mary", RelationType.DAUGHTER));
 
 
 
