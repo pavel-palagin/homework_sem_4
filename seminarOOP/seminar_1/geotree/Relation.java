@@ -11,6 +11,8 @@ public class Relation {
         this.relationType = relationType;
     }
 
+
+
     @Override
     public String toString() {
         return "Relation{" +

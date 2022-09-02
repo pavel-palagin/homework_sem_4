@@ -19,11 +19,46 @@ public class Person {
 
     @Override
     public String toString() {
+        RelationType type = null;
+
+        if(type == RelationType.DAUGHTER || type == RelationType.SON){
+
+            if(sex == SexType.MAN){
+                return "Father{" +
+                        "name= " + name + ' ' + surname +
+                        ", age=" + age +
+                        ", sex=" + sex +
+                        '}';
+            }else{
+                return "Mother{" +
+                        "name= " + name + ' ' + surname +
+                        ", age=" + age +
+                        ", sex=" + sex +
+                        '}';
+            }
+
+        }
         return "Person{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
+                "name= " + name + ' ' +
+                surname +
                 ", age=" + age +
                 ", sex=" + sex +
                 '}';
     }
+
+
+
+
+
+//    @Override
+//    public String toString() {
+//        return "Person{" +
+//                "name='" + name + ' ' +
+//                surname +
+//                ", age=" + age +
+//                ", sex=" + sex +
+//                '}';
+//    }
+
 }
+
