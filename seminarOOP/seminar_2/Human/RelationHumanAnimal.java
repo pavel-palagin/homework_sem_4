@@ -12,6 +12,7 @@ public class RelationHumanAnimal implements RelationInterface {
     private Map<Human, List<Animal>> humanToAnimal;
 
     public RelationHumanAnimal() {
+
         humanToAnimal = new HashMap<>();
     }
 

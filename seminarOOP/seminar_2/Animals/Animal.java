@@ -13,6 +13,10 @@ public abstract class Animal {
 
     abstract void Voice();
 
+    abstract void Pet();
+
+    abstract void ordinaryActivity();
+
     @Override
     public String toString() {
         return this.getClass().getName() + " " + nickname;
