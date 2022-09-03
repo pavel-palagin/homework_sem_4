@@ -17,7 +17,7 @@ public class Humster extends  Animal {
     }
 
     @Override
-    void ordinaryActivity() {
+    public void ordinaryActivity() {
         System.out.println("Run in wheel");
     }
 }

@@ -18,7 +18,7 @@ public class Dog extends Animal{
     }
 
     @Override
-    void ordinaryActivity() {
+    public void ordinaryActivity() {
         System.out.println("Gnaw a bone");
     }
 

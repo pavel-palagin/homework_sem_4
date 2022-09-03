@@ -17,7 +17,7 @@ public class Cat extends Animal {
     }
 
     @Override
-    void ordinaryActivity() {
+    public void ordinaryActivity() {
         System.out.println("Sleep");
     }
 

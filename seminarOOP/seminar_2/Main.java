@@ -26,11 +26,13 @@ public class Main {
         Dog getPet = new Dog("Reks");
         getPet.Pet();
 
+        Humster getOrdinaryActivity = new Humster("Rino");
+        getOrdinaryActivity.ordinaryActivity();
+
         InteractionHumanToAnimal interaction = new InteractionHumanToAnimal();
 
         interaction.CommandToAnimal("Reks", Commands.COMETOME);
 
-        System.out.println();
 
 
 
