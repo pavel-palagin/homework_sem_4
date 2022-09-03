@@ -10,7 +10,7 @@ public class Main {
         Human human1 = new Human("Max");
         Animal animalCat = new Cat("Milka");
         Animal animalDog = new Dog("Reks");
-        Animal animalHumster = new Humster("Rino");
+        Animal animalHumster = new Hamster("Rino");
 
 
         RelationInterface relation = new RelationHumanAnimal();
@@ -21,13 +21,17 @@ public class Main {
 //        System.out.println(relation.returnAnimalByHuman(human1));
 
         Cat getVoice = new Cat("Milka");
+        System.out.print("Cat is ");
         getVoice.Voice();
 
         Dog getPet = new Dog("Reks");
+        System.out.print("Dog is ");
         getPet.Pet();
 
-        Humster getOrdinaryActivity = new Humster("Rino");
+        Hamster getOrdinaryActivity = new Hamster("Rino");
+        System.out.print("Hamster is ");
         getOrdinaryActivity.ordinaryActivity();
+
 
         InteractionHumanToAnimal interaction = new InteractionHumanToAnimal();
 

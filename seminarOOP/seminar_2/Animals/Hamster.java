@@ -1,7 +1,7 @@
 package seminarOOP.seminar_2.Animals;
 
-public class Humster extends  Animal {
-    public Humster(String nickname){
+public class Hamster extends  Animal {
+    public Hamster(String nickname){
 
         super(nickname);
     }
