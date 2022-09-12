@@ -1,17 +1,37 @@
-package seminarOOP.seminar_3;
+package seminar_3;
+
+import seminar_3.Wardrobe.Type;
+import seminar_3.Wardrobe.Wardrobe;
+import seminar_3.Wardrobe.WardrobeService;
 
 public class Main {
     public static void main(String[] args) {
         WardrobeService wardrobeService = new WardrobeService();
 
-        Human human = new Human("Max");
-        Wardrobe wardrobe = new Wardrobe(Color.BLACK);
+        Subject father = new Subject("Max", 123);
+        Subject mother = new Subject("Lena", 123);
+        Subject son = new Subject("Sasha", 0);
+        Subject daughter = new Subject("Mary", 0);
 
-        wardrobeService.putItem(wardrobe, human, "Book");
-        System.out.println(wardrobe.getItemsList());
 
-        System.out.println(wardrobeService.takeAllItem(wardrobe, human));
-        System.out.println(wardrobe.getItemsList());
+        Wardrobe bookshelf = new Wardrobe(Type.BOOKSHELF);
+        Wardrobe cupboard = new Wardrobe(Type.CUPBOARD);
+        Wardrobe wardrobe = new Wardrobe(Type.WARDROBE);
+        Wardrobe safe = new Wardrobe(Type.SAFE, 123);
+
+
+        wardrobeService.putItem(bookshelf, father, "book");
+        wardrobeService.putItem(bookshelf, daughter, "magazine");
+        wardrobeService.getItem(bookshelf, mother, "book");
+        wardrobeService.putItem(cupboard, mother, "cup");
+
+        wardrobeService.Open(safe, son);
+
+        System.out.println(bookshelf.getItemList(""));
+        System.out.println(cupboard.getItemList(""));
+
+
+
 
 
     }
