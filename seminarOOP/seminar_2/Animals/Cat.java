@@ -1,4 +1,4 @@
-package seminarOOP.seminar_2.Animals;
+package seminar_2.Animals;
 
 public class Cat extends Animal {
     public Cat(String nickname){

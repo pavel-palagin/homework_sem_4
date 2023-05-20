@@ -1,7 +1,9 @@
-package seminarOOP.seminar_2;
+package seminar_2;
 
-import seminarOOP.seminar_2.Animals.Animal;
-import seminarOOP.seminar_2.Human.Human;
+
+
+import seminar_2.Animals.Animal;
+import seminar_2.Human.Human;
 
 import java.util.List;
 

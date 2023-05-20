@@ -1,6 +1,7 @@
-package seminarOOP.seminar_1.geotree;
+package seminar_1.geotree;
 
-import java.util.ArrayList;
+
+
 import java.util.List;
 
 public class tree {
@@ -27,11 +28,12 @@ public class tree {
 //        Relation relation2 = new Relation(human5, human4, RelationType.PARENT);
 //        Relation relation3 = new Relation(human3, human1, RelationType.PARENT);
 //        Relation relation4 = new Relation(human2, human1, RelationType.PARENT);
-//        Relation relation5 = new Relation(human1, human3, RelationType.SON);
-//        Relation relation6 = new Relation(human1, human2, RelationType.SON);
-//        Relation relation7 = new Relation(human4, human1, RelationType.DAUGHTER);
-//        Relation relation8 = new Relation(human4, human5, RelationType.DAUGHTER);
+//        Relation relation5 = new Relation(human1, human3, RelationType.CHILD);
+//        Relation relation6 = new Relation(human1, human2, RelationType.CHILD);
+//        Relation relation7 = new Relation(human4, human1, RelationType.CHILD);
+//        Relation relation8 = new Relation(human4, human5, RelationType.CHILD);
 //        Relation relation9 = new Relation(human5, human1, RelationType.HUSBAND);
+//        Relation relation10 = new Relation(human1, human5, RelationType.WIFE);
 
         Research getAllRelation = new Research();
         getAllRelation.getRelation.addAll(List.of(relation1,relation2, relation3, relation4, relation5, relation6, relation7));

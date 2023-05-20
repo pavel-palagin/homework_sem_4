@@ -1,8 +1,9 @@
-package seminarOOP.seminar_2;
+package seminar_2;
 
-import seminarOOP.seminar_2.Animals.*;
-import seminarOOP.seminar_2.Human.Human;
-import seminarOOP.seminar_2.Human.RelationHumanAnimal;
+
+import seminar_2.Animals.*;
+import seminar_2.Human.Human;
+import seminar_2.Human.RelationHumanAnimal;
 
 public class Main {
 

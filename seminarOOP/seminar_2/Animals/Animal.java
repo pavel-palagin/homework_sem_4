@@ -1,4 +1,4 @@
-package seminarOOP.seminar_2.Animals;
+package seminar_2.Animals;
 
 public abstract class Animal {
     private String nickname;

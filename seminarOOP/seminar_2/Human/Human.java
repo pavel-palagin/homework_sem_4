@@ -1,4 +1,4 @@
-package seminarOOP.seminar_2.Human;
+package seminar_2.Human;
 
 public class Human {
     private String name;

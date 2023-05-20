@@ -1,10 +1,7 @@
-package seminarOOP.seminar_2.Animals;
+package seminar_2.Animals;
 
 
-import seminarOOP.seminar_1.geotree.Person;
-import seminarOOP.seminar_1.geotree.Relation;
-import seminarOOP.seminar_2.Human.RelationHumanAnimal;
-import seminarOOP.seminar_2.RelationInterface;
+
 
 import java.util.ArrayList;
 import java.util.List;

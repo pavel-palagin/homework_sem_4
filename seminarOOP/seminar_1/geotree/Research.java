@@ -1,4 +1,6 @@
-package seminarOOP.seminar_1.geotree;
+package seminar_1.geotree;
+
+
 
 import java.util.ArrayList;
 import java.util.List;

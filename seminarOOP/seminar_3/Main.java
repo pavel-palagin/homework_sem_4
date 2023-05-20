@@ -22,13 +22,13 @@ public class Main {
 
         wardrobeService.putItem(bookshelf, father, "book");
         wardrobeService.putItem(bookshelf, daughter, "magazine");
+        wardrobeService.putItem(bookshelf, son, "textbook");
         wardrobeService.getItem(bookshelf, mother, "book");
-        wardrobeService.putItem(cupboard, mother, "cup");
 
         wardrobeService.Open(safe, son);
 
         System.out.println(bookshelf.getItemList(""));
-        System.out.println(cupboard.getItemList(""));
+
 
 
 

@@ -1,9 +1,11 @@
-package seminarOOP.seminar_1.geotree;
+package seminar_1.geotree;
+
+
 
 public class Relation {
-    Person member1;
-    Person member2;
-    RelationType relationType;
+    public Person member1;
+    public Person member2;
+    public RelationType relationType;
 
     public Relation(Person member1, Person member2, RelationType relationType) {
         this.member1 = member1;

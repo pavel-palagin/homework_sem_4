@@ -1,4 +1,6 @@
-package seminarOOP.seminar_1.geotree;
+package seminar_1.geotree;
+
+
 
 public class Person {
     private String name;

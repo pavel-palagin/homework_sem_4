@@ -1,7 +1,9 @@
-package seminarOOP.seminar_2.Human;
+package seminar_2.Human;
 
-import seminarOOP.seminar_2.Animals.Animal;
-import seminarOOP.seminar_2.RelationInterface;
+
+
+import seminar_2.Animals.Animal;
+import seminar_2.RelationInterface;
 
 import java.util.ArrayList;
 import java.util.HashMap;
